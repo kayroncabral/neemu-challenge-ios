@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EE4284B1D52816000A9B2CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4284A1D52816000A9B2CF /* AppDelegate.swift */; };
+		3EE4284D1D52816000A9B2CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4284C1D52816000A9B2CF /* ViewController.swift */; };
+		3EE428501D52816000A9B2CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE4284E1D52816000A9B2CF /* Main.storyboard */; };
+		3EE428531D52816000A9B2CF /* Neemu_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EE428511D52816000A9B2CF /* Neemu_Challenge.xcdatamodeld */; };
+		3EE428551D52816000A9B2CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE428541D52816000A9B2CF /* Assets.xcassets */; };
+		3EE428581D52816000A9B2CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE428561D52816000A9B2CF /* LaunchScreen.storyboard */; };
+		3EE428631D52816000A9B2CF /* Neemu_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE428621D52816000A9B2CF /* Neemu_ChallengeTests.swift */; };
+		3EE4286E1D52816000A9B2CF /* Neemu_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4286D1D52816000A9B2CF /* Neemu_ChallengeUITests.swift */; };
+		3EE428831D52880600A9B2CF /* challenge.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EE428821D52880600A9B2CF /* challenge.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EE4285F1D52816000A9B2CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EE4283F1D52816000A9B2CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EE428461D52816000A9B2CF;
+			remoteInfo = "Neemu Challenge";
+		};
+		3EE4286A1D52816000A9B2CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EE4283F1D52816000A9B2CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EE428461D52816000A9B2CF;
+			remoteInfo = "Neemu Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3EE428471D52816000A9B2CF /* Neemu Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neemu Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE4284A1D52816000A9B2CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EE4284C1D52816000A9B2CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EE4284F1D52816000A9B2CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EE428521D52816000A9B2CF /* Neemu_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Neemu_Challenge.xcdatamodel; sourceTree = "<group>"; };
+		3EE428541D52816000A9B2CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EE428571D52816000A9B2CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EE428591D52816000A9B2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE4285E1D52816000A9B2CF /* Neemu ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Neemu ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE428621D52816000A9B2CF /* Neemu_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neemu_ChallengeTests.swift; sourceTree = "<group>"; };
+		3EE428641D52816000A9B2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE428691D52816000A9B2CF /* Neemu ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Neemu ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE4286D1D52816000A9B2CF /* Neemu_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neemu_ChallengeUITests.swift; sourceTree = "<group>"; };
+		3EE4286F1D52816000A9B2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE428821D52880600A9B2CF /* challenge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = challenge.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EE428441D52816000A9B2CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE4285B1D52816000A9B2CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE428661D52816000A9B2CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EE4283E1D52816000A9B2CF = {
+			isa = PBXGroup;
+			children = (
+				3EE428491D52816000A9B2CF /* Neemu Challenge */,
+				3EE428611D52816000A9B2CF /* Neemu ChallengeTests */,
+				3EE4286C1D52816000A9B2CF /* Neemu ChallengeUITests */,
+				3EE428481D52816000A9B2CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3EE428481D52816000A9B2CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EE428471D52816000A9B2CF /* Neemu Challenge.app */,
+				3EE4285E1D52816000A9B2CF /* Neemu ChallengeTests.xctest */,
+				3EE428691D52816000A9B2CF /* Neemu ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EE428491D52816000A9B2CF /* Neemu Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				3EE4284A1D52816000A9B2CF /* AppDelegate.swift */,
+				3EE4287B1D5282A900A9B2CF /* Model */,
+				3EE4287C1D5282AF00A9B2CF /* View */,
+				3EE4287D1D5282B400A9B2CF /* Controller */,
+				3EE4287F1D52861C00A9B2CF /* Resources */,
+				3EE4287E1D5282C600A9B2CF /* Extensions */,
+				3EE4284E1D52816000A9B2CF /* Main.storyboard */,
+				3EE428541D52816000A9B2CF /* Assets.xcassets */,
+				3EE428561D52816000A9B2CF /* LaunchScreen.storyboard */,
+				3EE428591D52816000A9B2CF /* Info.plist */,
+				3EE428511D52816000A9B2CF /* Neemu_Challenge.xcdatamodeld */,
+			);
+			path = "Neemu Challenge";
+			sourceTree = "<group>";
+		};
+		3EE428611D52816000A9B2CF /* Neemu ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				3EE428621D52816000A9B2CF /* Neemu_ChallengeTests.swift */,
+				3EE428641D52816000A9B2CF /* Info.plist */,
+			);
+			path = "Neemu ChallengeTests";
+			sourceTree = "<group>";
+		};
+		3EE4286C1D52816000A9B2CF /* Neemu ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3EE4286D1D52816000A9B2CF /* Neemu_ChallengeUITests.swift */,
+				3EE4286F1D52816000A9B2CF /* Info.plist */,
+			);
+			path = "Neemu ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		3EE4287B1D5282A900A9B2CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3EE4287C1D5282AF00A9B2CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3EE4287D1D5282B400A9B2CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EE4284C1D52816000A9B2CF /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3EE4287E1D5282C600A9B2CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		3EE4287F1D52861C00A9B2CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3EE428821D52880600A9B2CF /* challenge.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EE428461D52816000A9B2CF /* Neemu Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EE428721D52816000A9B2CF /* Build configuration list for PBXNativeTarget "Neemu Challenge" */;
+			buildPhases = (
+				3EE428431D52816000A9B2CF /* Sources */,
+				3EE428441D52816000A9B2CF /* Frameworks */,
+				3EE428451D52816000A9B2CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Neemu Challenge";
+			productName = "Neemu Challenge";
+			productReference = 3EE428471D52816000A9B2CF /* Neemu Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3EE4285D1D52816000A9B2CF /* Neemu ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EE428751D52816000A9B2CF /* Build configuration list for PBXNativeTarget "Neemu ChallengeTests" */;
+			buildPhases = (
+				3EE4285A1D52816000A9B2CF /* Sources */,
+				3EE4285B1D52816000A9B2CF /* Frameworks */,
+				3EE4285C1D52816000A9B2CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EE428601D52816000A9B2CF /* PBXTargetDependency */,
+			);
+			name = "Neemu ChallengeTests";
+			productName = "Neemu ChallengeTests";
+			productReference = 3EE4285E1D52816000A9B2CF /* Neemu ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3EE428681D52816000A9B2CF /* Neemu ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EE428781D52816000A9B2CF /* Build configuration list for PBXNativeTarget "Neemu ChallengeUITests" */;
+			buildPhases = (
+				3EE428651D52816000A9B2CF /* Sources */,
+				3EE428661D52816000A9B2CF /* Frameworks */,
+				3EE428671D52816000A9B2CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EE4286B1D52816000A9B2CF /* PBXTargetDependency */,
+			);
+			name = "Neemu ChallengeUITests";
+			productName = "Neemu ChallengeUITests";
+			productReference = 3EE428691D52816000A9B2CF /* Neemu ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EE4283F1D52816000A9B2CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Neemu;
+				TargetAttributes = {
+					3EE428461D52816000A9B2CF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3EE4285D1D52816000A9B2CF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3EE428461D52816000A9B2CF;
+					};
+					3EE428681D52816000A9B2CF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3EE428461D52816000A9B2CF;
+					};
+				};
+			};
+			buildConfigurationList = 3EE428421D52816000A9B2CF /* Build configuration list for PBXProject "Neemu Challenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EE4283E1D52816000A9B2CF;
+			productRefGroup = 3EE428481D52816000A9B2CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EE428461D52816000A9B2CF /* Neemu Challenge */,
+				3EE4285D1D52816000A9B2CF /* Neemu ChallengeTests */,
+				3EE428681D52816000A9B2CF /* Neemu ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EE428451D52816000A9B2CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE428581D52816000A9B2CF /* LaunchScreen.storyboard in Resources */,
+				3EE428831D52880600A9B2CF /* challenge.json in Resources */,
+				3EE428551D52816000A9B2CF /* Assets.xcassets in Resources */,
+				3EE428501D52816000A9B2CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE4285C1D52816000A9B2CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE428671D52816000A9B2CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EE428431D52816000A9B2CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE428531D52816000A9B2CF /* Neemu_Challenge.xcdatamodeld in Sources */,
+				3EE4284D1D52816000A9B2CF /* ViewController.swift in Sources */,
+				3EE4284B1D52816000A9B2CF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE4285A1D52816000A9B2CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE428631D52816000A9B2CF /* Neemu_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE428651D52816000A9B2CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE4286E1D52816000A9B2CF /* Neemu_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EE428601D52816000A9B2CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EE428461D52816000A9B2CF /* Neemu Challenge */;
+			targetProxy = 3EE4285F1D52816000A9B2CF /* PBXContainerItemProxy */;
+		};
+		3EE4286B1D52816000A9B2CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EE428461D52816000A9B2CF /* Neemu Challenge */;
+			targetProxy = 3EE4286A1D52816000A9B2CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3EE4284E1D52816000A9B2CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EE4284F1D52816000A9B2CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3EE428561D52816000A9B2CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EE428571D52816000A9B2CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EE428701D52816000A9B2CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EE428711D52816000A9B2CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EE428731D52816000A9B2CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Neemu Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neemu.Neemu-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3EE428741D52816000A9B2CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Neemu Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neemu.Neemu-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3EE428761D52816000A9B2CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Neemu ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neemu.Neemu-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neemu Challenge.app/Neemu Challenge";
+			};
+			name = Debug;
+		};
+		3EE428771D52816000A9B2CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Neemu ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neemu.Neemu-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neemu Challenge.app/Neemu Challenge";
+			};
+			name = Release;
+		};
+		3EE428791D52816000A9B2CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Neemu ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neemu.Neemu-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Neemu Challenge";
+			};
+			name = Debug;
+		};
+		3EE4287A1D52816000A9B2CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Neemu ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neemu.Neemu-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Neemu Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EE428421D52816000A9B2CF /* Build configuration list for PBXProject "Neemu Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE428701D52816000A9B2CF /* Debug */,
+				3EE428711D52816000A9B2CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EE428721D52816000A9B2CF /* Build configuration list for PBXNativeTarget "Neemu Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE428731D52816000A9B2CF /* Debug */,
+				3EE428741D52816000A9B2CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EE428751D52816000A9B2CF /* Build configuration list for PBXNativeTarget "Neemu ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE428761D52816000A9B2CF /* Debug */,
+				3EE428771D52816000A9B2CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EE428781D52816000A9B2CF /* Build configuration list for PBXNativeTarget "Neemu ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE428791D52816000A9B2CF /* Debug */,
+				3EE4287A1D52816000A9B2CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3EE428511D52816000A9B2CF /* Neemu_Challenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3EE428521D52816000A9B2CF /* Neemu_Challenge.xcdatamodel */,
+			);
+			currentVersion = 3EE428521D52816000A9B2CF /* Neemu_Challenge.xcdatamodel */;
+			path = Neemu_Challenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3EE4283F1D52816000A9B2CF /* Project object */;
+}
