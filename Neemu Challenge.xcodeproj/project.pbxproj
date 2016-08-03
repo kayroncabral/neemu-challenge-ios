@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3EE4284B1D52816000A9B2CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4284A1D52816000A9B2CF /* AppDelegate.swift */; };
-		3EE4284D1D52816000A9B2CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4284C1D52816000A9B2CF /* ViewController.swift */; };
+		3EE4284D1D52816000A9B2CF /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4284C1D52816000A9B2CF /* ProductsViewController.swift */; };
 		3EE428501D52816000A9B2CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE4284E1D52816000A9B2CF /* Main.storyboard */; };
 		3EE428531D52816000A9B2CF /* Neemu_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EE428511D52816000A9B2CF /* Neemu_Challenge.xcdatamodeld */; };
 		3EE428551D52816000A9B2CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE428541D52816000A9B2CF /* Assets.xcassets */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		3EE428471D52816000A9B2CF /* Neemu Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neemu Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE4284A1D52816000A9B2CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3EE4284C1D52816000A9B2CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EE4284C1D52816000A9B2CF /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		3EE4284F1D52816000A9B2CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EE428521D52816000A9B2CF /* Neemu_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Neemu_Challenge.xcdatamodel; sourceTree = "<group>"; };
 		3EE428541D52816000A9B2CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 		3EE4287D1D5282B400A9B2CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3EE4284C1D52816000A9B2CF /* ViewController.swift */,
+				3EE4284C1D52816000A9B2CF /* ProductsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 			files = (
 				3EE428531D52816000A9B2CF /* Neemu_Challenge.xcdatamodeld in Sources */,
 				3EE428851D52898D00A9B2CF /* Product.swift in Sources */,
-				3EE4284D1D52816000A9B2CF /* ViewController.swift in Sources */,
+				3EE4284D1D52816000A9B2CF /* ProductsViewController.swift in Sources */,
 				3EE4284B1D52816000A9B2CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
