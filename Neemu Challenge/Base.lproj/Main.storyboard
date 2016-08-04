@@ -261,6 +261,9 @@
                                                             <integer key="value" value="10"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="buyOnClick:" destination="wRu-f1-pus" eventType="touchUpInside" id="Pyh-1c-ti7"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>

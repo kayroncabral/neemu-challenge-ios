@@ -6,14 +6,15 @@
 //  Copyright © 2016 Neemu. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Product {
     
     var id: String?
     var name: String?
     var link: String?
-    var image: String?
+    var imageUrl: String?
+    var imageCache: UIImage?
     var rating: String?
     var price: String?
     var priceRaw: Double?
@@ -37,8 +38,8 @@ class Product {
             self.link = link
         }
 
-        if let image = data["image"] as? String {
-            self.image = image
+        if let imageUrl = data["image"] as? String {
+            self.imageUrl = imageUrl
         }
 
         if let rating = data["rating"] as? String {

@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class ProductsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let productIdentifier = "ProductIdentifier"
     let headerIdentifier = "HeaderIdentifier"
     let detailViewControllerIdentifier = "DetailViewController"
+    let downloader = ImageDownloader()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -31,6 +33,10 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.tableFooterView = UIView(frame: CGRectZero)
         
         loadData()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,12 +57,8 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(productIdentifier, forIndexPath: indexPath) as! ProductCell
         
-        dispatch_async(dispatch_get_main_queue()) { 
-            if let url = NSURL(string: self.products[indexPath.row].image!) {
-                if let data = NSData(contentsOfURL: url) {
-                    cell.photo.image = UIImage(data: data)
-                }
-            }
+        if let image = products[indexPath.row].imageCache {
+            cell.photo.image = image
         }
         
         cell.name.text = products[indexPath.row].name
@@ -65,7 +67,6 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 1, range: NSMakeRange(0, attributeString.length))
         
         cell.lastPrice.attributedText = attributeString
-        
         cell.price.text = products[indexPath.row].price!
         
         return cell
@@ -97,6 +98,17 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         let products = result["products"]! as! NSArray
         for product in products {
             let product = Product(data: product as! NSDictionary)
+            
+            let URLRequest = NSURLRequest(URL: NSURL(string: product.imageUrl!)!)
+            downloader.downloadImage(URLRequest: URLRequest) { response in
+                if let image = response.result.value {
+                    product.imageCache = image
+                    dispatch_async(dispatch_get_main_queue(), { 
+                        self.tableView.reloadData()
+                    })
+                }
+            }
+            
             self.products.append(product)
         }
     }

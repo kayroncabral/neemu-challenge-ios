@@ -29,12 +29,8 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let product = DetailViewController.product
         
-        dispatch_async(dispatch_get_main_queue()) {
-            if let url = NSURL(string: product!.image!) {
-                if let data = NSData(contentsOfURL: url) {
-                    cell.photo.image = UIImage(data: data)
-                }
-            }
+        if let image = product!.imageCache {
+            cell.photo.image = image
         }
         
         cell.name.text = product!.name
@@ -53,4 +49,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return UITableViewAutomaticDimension
     }
     
+    @IBAction func buyOnClick(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: DetailViewController.product!.link!)!)
+    }
 }
