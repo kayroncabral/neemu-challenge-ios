@@ -9,6 +9,11 @@
 import UIKit
 
 extension UIColor {
+    
+    /*
+        Color used in app
+     */
+    
     class func oneColor() -> UIColor {
         return UIColor(red: 81.0 / 255.0, green: 102.0 / 255.0, blue: 219.0 / 255.0, alpha: 1.0)
     }

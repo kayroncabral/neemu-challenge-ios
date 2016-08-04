@@ -30,6 +30,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Hiding empty cells
         tableView.tableFooterView = UIView(frame: CGRectZero)
         
         loadData()
@@ -43,6 +44,12 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: TableView Methods
+    
+    /*
+        Load Custom view from prototype
+     */
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeueReusableCellWithIdentifier(headerIdentifier) as! HeaderCell
@@ -72,12 +79,22 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         return products.count
     }
     
+    /*
+        Call Detail View Controller passing the product selected
+     */
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let detailViewController = storyboard.instantiateViewControllerWithIdentifier(detailViewControllerIdentifier) as! DetailViewController
         DetailViewController.product = products[indexPath.row]
         self.navigationController?.pushViewController(detailViewController, animated: true)
     }
+    
+    // MARK: JSON Data
+    
+    /*
+        Parsing JSON from Resourcee file
+     */
     
     func parseJSON() -> NSDictionary! {
         let filePath = NSBundle.mainBundle().pathForResource("challenge", ofType:"json")!
@@ -87,6 +104,10 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
             
         return json
     }
+    
+    /*
+        Loading data into a Product model and downloading cache image using AlamofireImage
+     */
     
     func loadData() {
         let data = parseJSON()

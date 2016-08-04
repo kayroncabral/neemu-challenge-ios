@@ -15,10 +15,11 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     let detailIdentifier = "DetailIdentifier"
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var ratingControl: RatingControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Produto"
     }
     
     // MARK: TableView Methods
@@ -68,6 +69,10 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     // MARK: Share Sheet
+    
+    /*
+        Instantiate a Share Sheet
+     */
     
     func displayShareSheet(shareContent:String) {
         let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString], applicationActivities: nil)
