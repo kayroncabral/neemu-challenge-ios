@@ -17,6 +17,8 @@
 		3EE4286E1D52816000A9B2CF /* Neemu_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4286D1D52816000A9B2CF /* Neemu_ChallengeUITests.swift */; };
 		3EE428831D52880600A9B2CF /* challenge.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EE428821D52880600A9B2CF /* challenge.json */; };
 		3EE428851D52898D00A9B2CF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE428841D52898D00A9B2CF /* Product.swift */; };
+		3EE428871D5290FF00A9B2CF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE428861D5290FF00A9B2CF /* DetailViewController.swift */; };
+		3EE428891D52912A00A9B2CF /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE428881D52912A00A9B2CF /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		3EE4286F1D52816000A9B2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EE428821D52880600A9B2CF /* challenge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = challenge.json; sourceTree = "<group>"; };
 		3EE428841D52898D00A9B2CF /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		3EE428861D5290FF00A9B2CF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3EE428881D52912A00A9B2CF /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 		3EE4287C1D5282AF00A9B2CF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3EE428881D52912A00A9B2CF /* ProductCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				3EE4284C1D52816000A9B2CF /* ProductsViewController.swift */,
+				3EE428861D5290FF00A9B2CF /* DetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -308,6 +314,8 @@
 			files = (
 				3EE428531D52816000A9B2CF /* Neemu_Challenge.xcdatamodeld in Sources */,
 				3EE428851D52898D00A9B2CF /* Product.swift in Sources */,
+				3EE428871D5290FF00A9B2CF /* DetailViewController.swift in Sources */,
+				3EE428891D52912A00A9B2CF /* ProductCell.swift in Sources */,
 				3EE4284D1D52816000A9B2CF /* ProductsViewController.swift in Sources */,
 				3EE4284B1D52816000A9B2CF /* AppDelegate.swift in Sources */,
 			);
