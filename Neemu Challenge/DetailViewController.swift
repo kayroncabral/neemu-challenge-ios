@@ -71,7 +71,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // MARK: Share Sheet
     
     /*
-        Instantiate a Share Sheet
+        This method instantiate a Share Sheet
      */
     
     func displayShareSheet(shareContent:String) {

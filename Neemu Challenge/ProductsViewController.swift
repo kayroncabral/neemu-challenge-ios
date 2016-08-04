@@ -92,10 +92,11 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     
     // MARK: JSON Data
     
-    /*
-        Parsing JSON from Resourcee file
-     */
-    
+    /**
+        This method read a resource file and serialize to JSON
+     
+        - Returns: A JSON **NSDictionary**
+    */
     func parseJSON() -> NSDictionary! {
         let filePath = NSBundle.mainBundle().pathForResource("challenge", ofType:"json")!
         
@@ -105,10 +106,9 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         return json
     }
     
-    /*
-        Loading data into a Product model and downloading cache image using AlamofireImage
-     */
-    
+    /**
+        This method parse data into a Product model
+    */
     func loadData() {
         let data = parseJSON()
         let result = data!["result"] as! NSDictionary
@@ -116,17 +116,28 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         for product in products {
             let product = Product(data: product as! NSDictionary)
             
-            let URLRequest = NSURLRequest(URL: NSURL(string: product.imageUrl!)!)
-            downloader.downloadImage(URLRequest: URLRequest) { response in
-                if let image = response.result.value {
-                    product.imageCache = image
-                    dispatch_async(dispatch_get_main_queue(), { 
-                        self.tableView.reloadData()
-                    })
-                }
-            }
+            downloadImage(product)
             
             self.products.append(product)
+        }
+    }
+    
+    // MARK: Alamofire Download Image
+    
+    /**
+        This method download cache image using AlamofireImage
+     
+        - Parameter product: The first part of the full name.
+     */
+    func downloadImage(product: Product) {
+        let URLRequest = NSURLRequest(URL: NSURL(string: product.imageUrl!)!)
+        downloader.downloadImage(URLRequest: URLRequest) { response in
+            if let image = response.result.value {
+                product.imageCache = image
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.tableView.reloadData()
+                })
+            }
         }
     }
     

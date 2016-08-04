@@ -22,8 +22,6 @@ class Product {
     var lastPriceRaw: Double?
     var desc: String?
     
-    init() {}
-    
     init(data: AnyObject!) {
         
         if let id = data["id"] as? String {
