@@ -15,6 +15,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     let headerIdentifier = "HeaderIdentifier"
     let detailViewControllerIdentifier = "DetailViewController"
     let downloader = ImageDownloader()
+    var hasClicked = false
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -84,10 +85,14 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
      */
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let detailViewController = storyboard.instantiateViewControllerWithIdentifier(detailViewControllerIdentifier) as! DetailViewController
-        DetailViewController.product = products[indexPath.row]
-        self.navigationController?.pushViewController(detailViewController, animated: true)
+        if (!hasClicked) {
+            hasClicked = true
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let detailViewController = storyboard.instantiateViewControllerWithIdentifier(detailViewControllerIdentifier) as! DetailViewController
+            DetailViewController.product = products[indexPath.row]
+            self.navigationController?.pushViewController(detailViewController, animated: true)
+            hasClicked = false
+        }
     }
     
     // MARK: JSON Data
