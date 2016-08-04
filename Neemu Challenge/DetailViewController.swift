@@ -15,10 +15,13 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     let detailIdentifier = "DetailIdentifier"
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var ratingControl: RatingControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    // MARK: TableView Methods
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -34,8 +37,13 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         
         cell.name.text = product!.name
-        cell.lastPrice.text = product!.lastPrice
+        
+        let attributeString: NSMutableAttributedString = NSMutableAttributedString(string: product!.lastPrice!)
+        attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 1, range: NSMakeRange(0, attributeString.length))
+        
+        cell.lastPrice.attributedText = attributeString
         cell.price.text = product!.price
+        cell.rating.rating = Int(product!.rating!)!
         cell.desc.text = product!.desc
         
         return cell
@@ -49,7 +57,24 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return UITableViewAutomaticDimension
     }
     
+    // MARK: Button Action
+    
     @IBAction func buyOnClick(sender: AnyObject) {
         UIApplication.sharedApplication().openURL(NSURL(string: DetailViewController.product!.link!)!)
+    }
+    
+    @IBAction func likeOnClick(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func shareOnClick(sender: AnyObject) {
+        displayShareSheet("")
+    }
+    
+    // MARK: Share Sheet
+    
+    func displayShareSheet(shareContent:String) {
+        let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString], applicationActivities: nil)
+        presentViewController(activityViewController, animated: true, completion: {})
     }
 }

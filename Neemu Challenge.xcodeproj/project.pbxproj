@@ -23,6 +23,7 @@
 		3EE4288B1D52D5F500A9B2CF /* UIColor+AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4288A1D52D5F500A9B2CF /* UIColor+AppColor.swift */; };
 		3EE4288D1D52D9E500A9B2CF /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4288C1D52D9E500A9B2CF /* HeaderCell.swift */; };
 		3EE4288F1D52E96100A9B2CF /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4288E1D52E96100A9B2CF /* DetailCell.swift */; };
+		3EE428911D5365F300A9B2CF /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE428901D5365F300A9B2CF /* RatingControl.swift */; };
 		4A7D7CFC441D66FFC3C001C4 /* Pods_Neemu_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74E8045FBC38732B0336F6 /* Pods_Neemu_Challenge.framework */; };
 		BC01ED1F762A8C1750FA884F /* Pods_Neemu_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9B956C179EB86B0F9D6EB2 /* Pods_Neemu_ChallengeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		3EE4288A1D52D5F500A9B2CF /* UIColor+AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColor.swift"; sourceTree = "<group>"; };
 		3EE4288C1D52D9E500A9B2CF /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		3EE4288E1D52E96100A9B2CF /* DetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		3EE428901D5365F300A9B2CF /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		797D0DE5FE174A33F44185BC /* Pods-Neemu Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neemu Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Neemu Challenge/Pods-Neemu Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		8CF3CEBFA0F6C739732BCCE7 /* Pods-Neemu ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neemu ChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Neemu ChallengeTests/Pods-Neemu ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		8D74E8045FBC38732B0336F6 /* Pods_Neemu_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neemu_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,7 @@
 				3EE4287B1D5282A900A9B2CF /* Model */,
 				3EE4287C1D5282AF00A9B2CF /* View */,
 				3EE4287D1D5282B400A9B2CF /* Controller */,
+				3EE428921D53660A00A9B2CF /* Component */,
 				3EE4287F1D52861C00A9B2CF /* Resources */,
 				3EE4287E1D5282C600A9B2CF /* Extensions */,
 				3EE4284E1D52816000A9B2CF /* Main.storyboard */,
@@ -217,6 +220,14 @@
 				3EE428821D52880600A9B2CF /* challenge.json */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		3EE428921D53660A00A9B2CF /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				3EE428901D5365F300A9B2CF /* RatingControl.swift */,
+			);
+			name = Component;
 			sourceTree = "<group>";
 		};
 		4ACE01213A0498A64E578D87 /* Frameworks */ = {
@@ -500,6 +511,7 @@
 				3EE4288D1D52D9E500A9B2CF /* HeaderCell.swift in Sources */,
 				3EE428891D52912A00A9B2CF /* ProductCell.swift in Sources */,
 				3EE4284D1D52816000A9B2CF /* ProductsViewController.swift in Sources */,
+				3EE428911D5365F300A9B2CF /* RatingControl.swift in Sources */,
 				3EE4284B1D52816000A9B2CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
