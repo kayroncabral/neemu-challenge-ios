@@ -10,8 +10,13 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    static var product: Product?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let product = DetailViewController.product
+        
     }
     
 }

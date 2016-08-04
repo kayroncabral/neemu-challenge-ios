@@ -19,6 +19,8 @@
 		3EE428851D52898D00A9B2CF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE428841D52898D00A9B2CF /* Product.swift */; };
 		3EE428871D5290FF00A9B2CF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE428861D5290FF00A9B2CF /* DetailViewController.swift */; };
 		3EE428891D52912A00A9B2CF /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE428881D52912A00A9B2CF /* ProductCell.swift */; };
+		3EE4288B1D52D5F500A9B2CF /* UIColor+AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4288A1D52D5F500A9B2CF /* UIColor+AppColor.swift */; };
+		3EE4288D1D52D9E500A9B2CF /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4288C1D52D9E500A9B2CF /* HeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		3EE428841D52898D00A9B2CF /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		3EE428861D5290FF00A9B2CF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3EE428881D52912A00A9B2CF /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		3EE4288A1D52D5F500A9B2CF /* UIColor+AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColor.swift"; sourceTree = "<group>"; };
+		3EE4288C1D52D9E500A9B2CF /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				3EE428881D52912A00A9B2CF /* ProductCell.swift */,
+				3EE4288C1D52D9E500A9B2CF /* HeaderCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 		3EE4287E1D5282C600A9B2CF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3EE4288A1D52D5F500A9B2CF /* UIColor+AppColor.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -312,9 +318,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE4288B1D52D5F500A9B2CF /* UIColor+AppColor.swift in Sources */,
 				3EE428531D52816000A9B2CF /* Neemu_Challenge.xcdatamodeld in Sources */,
 				3EE428851D52898D00A9B2CF /* Product.swift in Sources */,
 				3EE428871D5290FF00A9B2CF /* DetailViewController.swift in Sources */,
+				3EE4288D1D52D9E500A9B2CF /* HeaderCell.swift in Sources */,
 				3EE428891D52912A00A9B2CF /* ProductCell.swift in Sources */,
 				3EE4284D1D52816000A9B2CF /* ProductsViewController.swift in Sources */,
 				3EE4284B1D52816000A9B2CF /* AppDelegate.swift in Sources */,

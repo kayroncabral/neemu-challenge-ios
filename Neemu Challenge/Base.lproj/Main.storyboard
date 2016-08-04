@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Cwv-94-xfy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Products View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ProductsViewController" customModule="Neemu_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ProductsViewController" customModule="Neemu_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,56 +16,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pmL-8d-ZQv">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pmL-8d-ZQv">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductIdentifier" rowHeight="140" id="oNH-6J-2gk" customClass="ProductCell" customModule="Neemu_Challenge" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="140"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeaderIdentifier" rowHeight="40" id="sPa-g7-Qee" customClass="HeaderCell" customModule="Neemu_Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oNH-6J-2gk" id="sgc-QG-30r">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="139.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sPa-g7-Qee" id="QEE-2D-IUh">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="39.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XKH-AK-ZuR">
-                                                    <rect key="frame" x="8" y="6" width="97" height="128"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Games para PS4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxk-YY-POl">
+                                                    <rect key="frame" x="8" y="9" width="128" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.31764705879999999" green="0.40000000000000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="kxk-YY-POl" firstAttribute="leading" secondItem="QEE-2D-IUh" secondAttribute="leading" constant="8" id="WCE-7b-moZ"/>
+                                                <constraint firstItem="kxk-YY-POl" firstAttribute="centerY" secondItem="QEE-2D-IUh" secondAttribute="centerY" id="zgo-8b-x7u"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="title" destination="kxk-YY-POl" id="CIY-ab-efl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductIdentifier" rowHeight="100" id="oNH-6J-2gk" customClass="ProductCell" customModule="Neemu_Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="68" width="600" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oNH-6J-2gk" id="sgc-QG-30r">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XKH-AK-ZuR">
+                                                    <rect key="frame" x="8" y="10" width="80" height="80"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="97" id="GKO-tJ-3dQ"/>
-                                                        <constraint firstAttribute="height" constant="128" id="Kh7-1o-IBz"/>
+                                                        <constraint firstAttribute="width" constant="80" id="GKO-tJ-3dQ"/>
+                                                        <constraint firstAttribute="height" constant="80" id="Kh7-1o-IBz"/>
                                                     </constraints>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="r61-o2-dXx">
-                                                    <rect key="frame" x="113" y="8" width="479" height="124"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="r61-o2-dXx">
+                                                    <rect key="frame" x="96" y="14" width="472" height="72"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Uncharted 4 : A Thief's End-PS4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0i-W0-67r">
-                                                            <rect key="frame" x="0.0" y="0.0" width="479" height="62"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Game Uncharted 4 : A Thief's End-PS4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0i-W0-67r">
+                                                            <rect key="frame" x="0.0" y="0.0" width="472" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 199,90 por R$ 179,99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cs-2c-pXQ">
-                                                            <rect key="frame" x="0.0" y="62" width="479" height="62"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jm2-B8-IUw">
+                                                            <rect key="frame" x="0.0" y="52" width="472" height="21"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="R$ 199,00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cs-2c-pXQ" userLabel="Last Price">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="79" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text=" por " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Od-KB-rfR" userLabel="Por">
+                                                                    <rect key="frame" x="79" y="0.0" width="36" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="179,99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1x-bv-zB3" userLabel="Price">
+                                                                    <rect key="frame" x="115" y="0.0" width="358" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="r61-o2-dXx" secondAttribute="trailing" constant="8" id="4NO-2X-Oea"/>
-                                                <constraint firstItem="r61-o2-dXx" firstAttribute="top" secondItem="sgc-QG-30r" secondAttribute="top" constant="8" id="AaN-xc-xnL"/>
+                                                <constraint firstItem="r61-o2-dXx" firstAttribute="bottom" secondItem="XKH-AK-ZuR" secondAttribute="bottom" constant="-4" id="0qk-5t-FdC"/>
+                                                <constraint firstAttribute="trailing" secondItem="r61-o2-dXx" secondAttribute="trailing" constant="32" id="4NO-2X-Oea"/>
+                                                <constraint firstItem="r61-o2-dXx" firstAttribute="top" secondItem="XKH-AK-ZuR" secondAttribute="top" constant="4" id="AuA-4o-ujx"/>
                                                 <constraint firstItem="r61-o2-dXx" firstAttribute="leading" secondItem="XKH-AK-ZuR" secondAttribute="trailing" constant="8" id="RZ1-oE-VRZ"/>
                                                 <constraint firstItem="XKH-AK-ZuR" firstAttribute="leading" secondItem="sgc-QG-30r" secondAttribute="leading" constant="8" id="RyM-wV-ZeT"/>
-                                                <constraint firstAttribute="bottom" secondItem="r61-o2-dXx" secondAttribute="bottom" constant="8" id="pIk-kB-IuW"/>
                                                 <constraint firstItem="XKH-AK-ZuR" firstAttribute="centerY" secondItem="sgc-QG-30r" secondAttribute="centerY" id="uGn-y6-ZQM"/>
                                                 <constraint firstItem="r61-o2-dXx" firstAttribute="centerY" secondItem="sgc-QG-30r" secondAttribute="centerY" id="veF-Yf-WAy"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="lastPrice" destination="7cs-2c-pXQ" id="DKw-gI-Oad"/>
                                             <outlet property="name" destination="b0i-W0-67r" id="fz9-XO-Ubf"/>
                                             <outlet property="photo" destination="XKH-AK-ZuR" id="pVZ-c2-azN"/>
-                                            <outlet property="price" destination="7cs-2c-pXQ" id="Acm-Lb-wBx"/>
+                                            <outlet property="price" destination="F1x-bv-zB3" id="DQe-4q-CkS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -83,11 +124,60 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pmL-8d-ZQv" secondAttribute="bottom" id="vcv-b9-mZ3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" id="ogV-h2-nMC"/>
                     <connections>
                         <outlet property="tableView" destination="pmL-8d-ZQv" id="KVc-rj-rzC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="399"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="4qe-HQ-Y3J">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" automaticallyAdjustsScrollViewInsets="NO" id="wRu-f1-pus" customClass="DetailViewController" customModule="Neemu_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VX7-Ya-9It"/>
+                        <viewControllerLayoutGuide type="bottom" id="Erj-OH-fpC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pgg-ck-FRN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b4d-ey-Tyl">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b4d-ey-Tyl" firstAttribute="top" secondItem="VX7-Ya-9It" secondAttribute="bottom" id="H36-04-JmO"/>
+                            <constraint firstItem="Erj-OH-fpC" firstAttribute="top" secondItem="b4d-ey-Tyl" secondAttribute="bottom" id="Prb-Tr-aJY"/>
+                            <constraint firstItem="b4d-ey-Tyl" firstAttribute="leading" secondItem="Pgg-ck-FRN" secondAttribute="leading" id="V6p-1Q-wdW"/>
+                            <constraint firstAttribute="trailing" secondItem="b4d-ey-Tyl" secondAttribute="trailing" id="kEs-j3-j2f"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lA6-nD-Hbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2008" y="399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bbp-xZ-ROs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cwv-94-xfy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RBw-US-QQg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KRK-g6-yrl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b66-dC-T9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="440" y="399"/>
         </scene>
