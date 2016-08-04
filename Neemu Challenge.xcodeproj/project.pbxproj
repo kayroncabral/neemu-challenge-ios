@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A841EF382CC2EFC997E4F71 /* Pods_Neemu_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E06D1E5F0501541EB624F9 /* Pods_Neemu_ChallengeTests.framework */; };
 		3EE4284B1D52816000A9B2CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4284A1D52816000A9B2CF /* AppDelegate.swift */; };
 		3EE4284D1D52816000A9B2CF /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4284C1D52816000A9B2CF /* ProductsViewController.swift */; };
 		3EE428501D52816000A9B2CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE4284E1D52816000A9B2CF /* Main.storyboard */; };
@@ -22,6 +23,8 @@
 		3EE4288B1D52D5F500A9B2CF /* UIColor+AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4288A1D52D5F500A9B2CF /* UIColor+AppColor.swift */; };
 		3EE4288D1D52D9E500A9B2CF /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4288C1D52D9E500A9B2CF /* HeaderCell.swift */; };
 		3EE4288F1D52E96100A9B2CF /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4288E1D52E96100A9B2CF /* DetailCell.swift */; };
+		4A7D7CFC441D66FFC3C001C4 /* Pods_Neemu_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74E8045FBC38732B0336F6 /* Pods_Neemu_Challenge.framework */; };
+		BC01ED1F762A8C1750FA884F /* Pods_Neemu_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9B956C179EB86B0F9D6EB2 /* Pods_Neemu_ChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B5CDAD9191C4C34B56D17D6 /* Pods-Neemu ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neemu ChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Neemu ChallengeTests/Pods-Neemu ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3EE428471D52816000A9B2CF /* Neemu Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neemu Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE4284A1D52816000A9B2CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EE4284C1D52816000A9B2CF /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,14 @@
 		3EE4288A1D52D5F500A9B2CF /* UIColor+AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColor.swift"; sourceTree = "<group>"; };
 		3EE4288C1D52D9E500A9B2CF /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		3EE4288E1D52E96100A9B2CF /* DetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		797D0DE5FE174A33F44185BC /* Pods-Neemu Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neemu Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Neemu Challenge/Pods-Neemu Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		8CF3CEBFA0F6C739732BCCE7 /* Pods-Neemu ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neemu ChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Neemu ChallengeTests/Pods-Neemu ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D74E8045FBC38732B0336F6 /* Pods_Neemu_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neemu_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA9B956C179EB86B0F9D6EB2 /* Pods_Neemu_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neemu_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E06D1E5F0501541EB624F9 /* Pods_Neemu_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neemu_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E213E0867A092C895E03F5BC /* Pods-Neemu Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neemu Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Neemu Challenge/Pods-Neemu Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		E93C18F6FF77B8AE0CC1D821 /* Pods-Neemu ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neemu ChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Neemu ChallengeUITests/Pods-Neemu ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F3A2C59989ED372C1803A732 /* Pods-Neemu ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neemu ChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Neemu ChallengeUITests/Pods-Neemu ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7D7CFC441D66FFC3C001C4 /* Pods_Neemu_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A841EF382CC2EFC997E4F71 /* Pods_Neemu_ChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +98,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC01ED1F762A8C1750FA884F /* Pods_Neemu_ChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E826FD0F6E0D550705F0FA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E213E0867A092C895E03F5BC /* Pods-Neemu Challenge.debug.xcconfig */,
+				797D0DE5FE174A33F44185BC /* Pods-Neemu Challenge.release.xcconfig */,
+				2B5CDAD9191C4C34B56D17D6 /* Pods-Neemu ChallengeTests.debug.xcconfig */,
+				8CF3CEBFA0F6C739732BCCE7 /* Pods-Neemu ChallengeTests.release.xcconfig */,
+				F3A2C59989ED372C1803A732 /* Pods-Neemu ChallengeUITests.debug.xcconfig */,
+				E93C18F6FF77B8AE0CC1D821 /* Pods-Neemu ChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3EE4283E1D52816000A9B2CF = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +125,8 @@
 				3EE428611D52816000A9B2CF /* Neemu ChallengeTests */,
 				3EE4286C1D52816000A9B2CF /* Neemu ChallengeUITests */,
 				3EE428481D52816000A9B2CF /* Products */,
+				3E826FD0F6E0D550705F0FA2 /* Pods */,
+				4ACE01213A0498A64E578D87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,6 +219,16 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		4ACE01213A0498A64E578D87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D74E8045FBC38732B0336F6 /* Pods_Neemu_Challenge.framework */,
+				C8E06D1E5F0501541EB624F9 /* Pods_Neemu_ChallengeTests.framework */,
+				AA9B956C179EB86B0F9D6EB2 /* Pods_Neemu_ChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EE428721D52816000A9B2CF /* Build configuration list for PBXNativeTarget "Neemu Challenge" */;
 			buildPhases = (
+				04A2D020163BCCE254692C56 /* 📦 Check Pods Manifest.lock */,
 				3EE428431D52816000A9B2CF /* Sources */,
 				3EE428441D52816000A9B2CF /* Frameworks */,
 				3EE428451D52816000A9B2CF /* Resources */,
+				9E1C0A0161DB40B580055B3C /* 📦 Embed Pods Frameworks */,
+				69EC920EAC016AB6625ACA3B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EE428751D52816000A9B2CF /* Build configuration list for PBXNativeTarget "Neemu ChallengeTests" */;
 			buildPhases = (
+				670A4DCAE742EB83266DEFFE /* 📦 Check Pods Manifest.lock */,
 				3EE4285A1D52816000A9B2CF /* Sources */,
 				3EE4285B1D52816000A9B2CF /* Frameworks */,
 				3EE4285C1D52816000A9B2CF /* Resources */,
+				4F821817EE32A5898F06E2F6 /* 📦 Embed Pods Frameworks */,
+				77BDED2729324165DB7D50CE /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EE428781D52816000A9B2CF /* Build configuration list for PBXNativeTarget "Neemu ChallengeUITests" */;
 			buildPhases = (
+				F134618C7AC9D50AE5870769 /* 📦 Check Pods Manifest.lock */,
 				3EE428651D52816000A9B2CF /* Sources */,
 				3EE428661D52816000A9B2CF /* Frameworks */,
 				3EE428671D52816000A9B2CF /* Resources */,
+				D0732E70DAD8904DFBC27818 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,6 +363,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04A2D020163BCCE254692C56 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4F821817EE32A5898F06E2F6 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Neemu ChallengeTests/Pods-Neemu ChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		670A4DCAE742EB83266DEFFE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69EC920EAC016AB6625ACA3B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Neemu Challenge/Pods-Neemu Challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77BDED2729324165DB7D50CE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Neemu ChallengeTests/Pods-Neemu ChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E1C0A0161DB40B580055B3C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Neemu Challenge/Pods-Neemu Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0732E70DAD8904DFBC27818 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Neemu ChallengeUITests/Pods-Neemu ChallengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F134618C7AC9D50AE5870769 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3EE428431D52816000A9B2CF /* Sources */ = {
@@ -471,6 +642,7 @@
 		};
 		3EE428731D52816000A9B2CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E213E0867A092C895E03F5BC /* Pods-Neemu Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Neemu Challenge/Info.plist";
@@ -483,6 +655,7 @@
 		};
 		3EE428741D52816000A9B2CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 797D0DE5FE174A33F44185BC /* Pods-Neemu Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Neemu Challenge/Info.plist";
@@ -495,6 +668,7 @@
 		};
 		3EE428761D52816000A9B2CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B5CDAD9191C4C34B56D17D6 /* Pods-Neemu ChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Neemu ChallengeTests/Info.plist";
@@ -507,6 +681,7 @@
 		};
 		3EE428771D52816000A9B2CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CF3CEBFA0F6C739732BCCE7 /* Pods-Neemu ChallengeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Neemu ChallengeTests/Info.plist";
@@ -519,6 +694,7 @@
 		};
 		3EE428791D52816000A9B2CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3A2C59989ED372C1803A732 /* Pods-Neemu ChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Neemu ChallengeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -530,6 +706,7 @@
 		};
 		3EE4287A1D52816000A9B2CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E93C18F6FF77B8AE0CC1D821 /* Pods-Neemu ChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Neemu ChallengeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
