@@ -62,11 +62,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         }
         
         cell.name.text = products[indexPath.row].name
-        
-        let attributeString: NSMutableAttributedString = NSMutableAttributedString(string: products[indexPath.row].lastPrice!)
-        attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 1, range: NSMakeRange(0, attributeString.length))
-        
-        cell.lastPrice.attributedText = attributeString
+        cell.lastPrice.attributedText = products[indexPath.row].lastPrice!.attributedStrikethrough()
         cell.price.text = products[indexPath.row].price!
         
         return cell

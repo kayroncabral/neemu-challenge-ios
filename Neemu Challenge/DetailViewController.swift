@@ -37,11 +37,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         
         cell.name.text = product!.name
-        
-        let attributeString: NSMutableAttributedString = NSMutableAttributedString(string: product!.lastPrice!)
-        attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 1, range: NSMakeRange(0, attributeString.length))
-        
-        cell.lastPrice.attributedText = attributeString
+        cell.lastPrice.attributedText = product!.lastPrice!.attributedStrikethrough()
         cell.price.text = product!.price
         cell.rating.rating = Int(product!.rating!)!
         cell.desc.text = product!.desc

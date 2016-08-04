@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A841EF382CC2EFC997E4F71 /* Pods_Neemu_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E06D1E5F0501541EB624F9 /* Pods_Neemu_ChallengeTests.framework */; };
+		3E46C9991D5381BF00075567 /* String+Strikethrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46C9981D5381BF00075567 /* String+Strikethrough.swift */; };
 		3EE4284B1D52816000A9B2CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4284A1D52816000A9B2CF /* AppDelegate.swift */; };
 		3EE4284D1D52816000A9B2CF /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4284C1D52816000A9B2CF /* ProductsViewController.swift */; };
 		3EE428501D52816000A9B2CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE4284E1D52816000A9B2CF /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		2B5CDAD9191C4C34B56D17D6 /* Pods-Neemu ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neemu ChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Neemu ChallengeTests/Pods-Neemu ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E46C9981D5381BF00075567 /* String+Strikethrough.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Strikethrough.swift"; sourceTree = "<group>"; };
 		3EE428471D52816000A9B2CF /* Neemu Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neemu Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE4284A1D52816000A9B2CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EE4284C1D52816000A9B2CF /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				3EE4288A1D52D5F500A9B2CF /* UIColor+AppColor.swift */,
+				3E46C9981D5381BF00075567 /* String+Strikethrough.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				3EE4288D1D52D9E500A9B2CF /* HeaderCell.swift in Sources */,
 				3EE428891D52912A00A9B2CF /* ProductCell.swift in Sources */,
 				3EE4284D1D52816000A9B2CF /* ProductsViewController.swift in Sources */,
+				3E46C9991D5381BF00075567 /* String+Strikethrough.swift in Sources */,
 				3EE428911D5365F300A9B2CF /* RatingControl.swift in Sources */,
 				3EE4284B1D52816000A9B2CF /* AppDelegate.swift in Sources */,
 			);
